@@ -11,7 +11,7 @@ const navbar = [
     path: '/home',
     private: false,
     hidden: false,
-    location: 'left'
+    location: ''
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const navbar = [
     path: '/about',
     private: false,
     hidden: false,
-    location: 'left'
+    location: ''
   },
   {
     id: 3,

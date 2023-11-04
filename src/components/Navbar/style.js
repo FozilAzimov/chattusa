@@ -73,29 +73,17 @@ justify-content: space-between;
 align-items: center;
 `;
 
-const Location = ({ location }) => {
-  switch (location) {
-    case "left": return "inline-block";
-    case "right": return "none";
-  }
-}
+
 
 const Link = styled(NavLink)`
-display: ${Location};
+display: ${({ location }) => location ? 'none' : 'inline-block'};
 margin-right: 15px;
 text-decoration: none;
 color: rgba(0,0,0,.5);
 `;
 
-const LocationContact = ({ location }) => {
-  switch (location) {
-    case "left": return "none";
-    case "right": return "inline-block";
-  }
-}
-
 const LinkContact = styled(NavLink)`
-display: ${LocationContact};
+display: ${({ location }) => location ? 'inline-block' : 'none'};
 text-decoration: none;
 color: rgba(0,0,0,.5);
 `;
