@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 
 import {
@@ -86,187 +87,193 @@ export default function Home () {
     message.warning('Ma`lumotlarni to`liq to`ldirilganligiga ishonch hosil qilib qayta urinib ko`ring.');
   }
 
-  const Click = (e) => setAvatarM(e.target.children[0].attributes.src.value);
-  const Click2 = (e) => setAvatarF(e.target.children[0].attributes.src.value);
+  const Click = (e) => {
+    e.preventDefault();
+    setAvatarM(e.target.children[0].attributes.src.value);
+  }
+  const Click2 = (e) => {
+    e.preventDefault();
+    setAvatarF(e.target.children[0].attributes.src.value);
+  }
 
   const data = [
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar1} style={{ width: '60px' }} />
+        <img src={avatar1} style={{ width: '60px' }} alt='' />
       </a>,
       key: '1',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar2} style={{ width: '60px' }} />
+        <img src={avatar2} style={{ width: '60px' }} alt='' />
       </a>,
       key: '2',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar3} style={{ width: '60px' }} />
+        <img src={avatar3} style={{ width: '60px' }} alt='' />
       </a>,
       key: '3',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar4} style={{ width: '60px' }} />
+        <img src={avatar4} style={{ width: '60px' }} alt='' />
       </a>,
       key: '4',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar5} style={{ width: '60px' }} />
+        <img src={avatar5} style={{ width: '60px' }} alt='' />
       </a>,
       key: '5',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar6} style={{ width: '60px' }} />
+        <img src={avatar6} style={{ width: '60px' }} alt='' />
       </a>,
       key: '6',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar7} style={{ width: '60px' }} />
+        <img src={avatar7} style={{ width: '60px' }} alt='' />
       </a>,
       key: '7',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar8} style={{ width: '60px' }} />
+        <img src={avatar8} style={{ width: '60px' }} alt='' />
       </a>,
       key: '8',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar9} style={{ width: '60px' }} />
+        <img src={avatar9} style={{ width: '60px' }} alt='' />
       </a>,
       key: '9',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar10} style={{ width: '60px' }} />
+        <img src={avatar10} style={{ width: '60px' }} alt='' />
       </a>,
       key: '10',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar11} style={{ width: '60px' }} />
+        <img src={avatar11} style={{ width: '60px' }} alt='' />
       </a>,
       key: '11',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar12} style={{ width: '60px' }} />
+        <img src={avatar12} style={{ width: '60px' }} alt='' />
       </a>,
       key: '12',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar13} style={{ width: '60px' }} />
+        <img src={avatar13} style={{ width: '60px' }} alt='' />
       </a>,
       key: '13',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar14} style={{ width: '60px' }} />
+        <img src={avatar14} style={{ width: '60px' }} alt='' />
       </a>,
       key: '14',
     },
     {
       label: <a href="#" onClick={Click}>
-        <img src={avatar15} style={{ width: '60px' }} />
+        <img src={avatar15} style={{ width: '60px' }} alt='' />
       </a>,
       key: '15',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar16} style={{ width: '60px' }} />
+        <img src={avatar16} style={{ width: '60px' }} alt='' />
       </a>,
       key: '16',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar17} style={{ width: '60px' }} />
+        <img src={avatar17} style={{ width: '60px' }} alt='' />
       </a>,
       key: '17',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar18} style={{ width: '60px' }} />
+        <img src={avatar18} style={{ width: '60px' }} alt='' />
       </a>,
       key: '18',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar19} style={{ width: '60px' }} />
+        <img src={avatar19} style={{ width: '60px' }} alt='' />
       </a>,
       key: '19',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar20} style={{ width: '60px' }} />
+        <img src={avatar20} style={{ width: '60px' }} alt='' />
       </a>,
       key: '20',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar21} style={{ width: '60px' }} />
+        <img src={avatar21} style={{ width: '60px' }} alt='' />
       </a>,
       key: '21',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar22} style={{ width: '60px' }} />
+        <img src={avatar22} style={{ width: '60px' }} alt='' />
       </a>,
       key: '22',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar23} style={{ width: '60px' }} />
+        <img src={avatar23} style={{ width: '60px' }} alt='' />
       </a>,
       key: '23',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar24} style={{ width: '60px' }} />
+        <img src={avatar24} style={{ width: '60px' }} alt='' />
       </a>,
       key: '24',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar25} style={{ width: '60px' }} />
+        <img src={avatar25} style={{ width: '60px' }} alt='' />
       </a>,
       key: '25',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar26} style={{ width: '60px' }} />
+        <img src={avatar26} style={{ width: '60px' }} alt='' />
       </a>,
       key: '26',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar27} style={{ width: '60px' }} />
+        <img src={avatar27} style={{ width: '60px' }} alt='' />
       </a>,
       key: '27',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar28} style={{ width: '60px' }} />
+        <img src={avatar28} style={{ width: '60px' }} alt='' />
       </a>,
       key: '28',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar29} style={{ width: '60px' }} />
+        <img src={avatar29} style={{ width: '60px' }} alt='' />
       </a>,
       key: '29',
     },
     {
       label: <a href="#" onClick={Click2}>
-        <img src={avatar30} style={{ width: '60px' }} />
+        <img src={avatar30} style={{ width: '60px' }} alt='' />
       </a>,
       key: '30',
     },
