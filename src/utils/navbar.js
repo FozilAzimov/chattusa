@@ -1,4 +1,3 @@
-import useUniqueId from "../hooks";
 import HomePage from "../pages/Home";
 import AboutPage from "../pages/About";
 import ContactUsPage from "../pages/ContactUs";
@@ -6,7 +5,7 @@ import ChatPage from "../pages/Chat";
 
 const navbar = [
   {
-    id: useUniqueId,
+    id: 1,
     element: <HomePage />,
     title: 'Home',
     path: '/home',
@@ -15,7 +14,7 @@ const navbar = [
     location: 'left'
   },
   {
-    id: useUniqueId,
+    id: 2,
     element: <AboutPage />,
     title: 'About',
     path: '/about',
@@ -24,7 +23,7 @@ const navbar = [
     location: 'left'
   },
   {
-    id: useUniqueId,
+    id: 3,
     element: <ContactUsPage />,
     title: 'Contact us',
     path: '/contact',
@@ -33,7 +32,7 @@ const navbar = [
     location: 'right'
   },
   {
-    id: useUniqueId,
+    id: 4,
     element: <ChatPage />,
     title: 'Chat',
     path: '/chat',
