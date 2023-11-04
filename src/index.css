@@ -25,12 +25,7 @@ body {
 :where(.css-qgg3xn).ant-dropdown .ant-dropdown-menu,
 :where(.css-qgg3xn).ant-dropdown-menu-submenu .ant-dropdown-menu {
   cursor: pointer !important;
-  width: 260px !important;
+  width: 280px !important;
   display: flex !important;
   flex-wrap: wrap !important;
-}
-
-:where(.css-qgg3xn).ant-dropdown .ant-dropdown-menu,
-:where(.css-qgg3xn).ant-dropdown-menu-submenu .ant-dropdown-menu:hover {
-  background: #f2f2f2 !important;
 }
