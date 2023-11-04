@@ -29,3 +29,12 @@ body {
   display: flex !important;
   flex-wrap: wrap !important;
 }
+
+:where(.css-qgg3xn).ant-space-gap-col-small {
+  background: #fff !important;
+}
+
+:where(.css-qgg3xn).ant-space-gap-col-small:hover {
+  background: #f2f2f2 !important;
+  cursor: pointer;
+}
