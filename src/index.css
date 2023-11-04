@@ -32,6 +32,9 @@ body {
 
 :where(.css-qgg3xn).ant-space-gap-col-small {
   background: #fff !important;
+  padding: 10px;
+  border-radius: .25rem;
+  border: 1px solid rgba(0, 0, 0, .15);
 }
 
 :where(.css-qgg3xn).ant-space-gap-col-small:hover {
