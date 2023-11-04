@@ -19,12 +19,17 @@ body {
   background: #fff !important;
   border-radius: .25rem !important;
   border: 1px solid #f2f2f2 !important;
+}
+
+:where(.css-qgg3xn).ant-dropdown .ant-dropdown-menu,
+:where(.css-qgg3xn).ant-dropdown-menu-submenu .ant-dropdown-menu {
   cursor: pointer !important;
   width: 260px !important;
   display: flex !important;
   flex-wrap: wrap !important;
 }
 
-:where(.css-dev-only-do-not-override-qgg3xn).ant-space-gap-col-small:hover {
+:where(.css-qgg3xn).ant-dropdown .ant-dropdown-menu,
+:where(.css-qgg3xn).ant-dropdown-menu-submenu .ant-dropdown-menu:hover {
   background: #f2f2f2 !important;
 }
