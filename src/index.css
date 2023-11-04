@@ -15,19 +15,20 @@ body {
 }
 
 :where(.css-dev-only-do-not-override-qgg3xn).ant-space-gap-col-small {
-  padding: 10px;
-  background: #fff;
-  border-radius: .25rem;
-  border: 1px solid #f2f2f2;
-  cursor: pointer;
+  padding: 10px !important;
+  background: #fff !important;
+  border-radius: .25rem !important;
+  border: 1px solid #f2f2f2 !important;
+  cursor: pointer !important;
 }
 
 :where(.css-dev-only-do-not-override-qgg3xn).ant-space-gap-col-small:hover {
-  background: #f2f2f2;
+  background: #f2f2f2 !important;
 }
 
-:where(.css-qgg3xn).ant-space-gap-col-small {
-  width: 260px;
-  display: flex;
-  flex-wrap: wrap;
+:where(.css-dev-only-do-not-override-qgg3xn).ant-dropdown .ant-dropdown-menu,
+:where(.css-dev-only-do-not-override-qgg3xn).ant-dropdown-menu-submenu .ant-dropdown-menu {
+  width: 260px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
 }
