@@ -14,7 +14,8 @@ body {
   background: rgb(247, 247, 247);
 }
 
-:where(.css-dev-only-do-not-override-qgg3xn).ant-space-gap-col-small {
+:where(.css-qgg3xn).ant-dropdown .ant-dropdown-menu,
+:where(.css-qgg3xn).ant-dropdown-menu-submenu .ant-dropdown-menu {
   padding: 10px !important;
   background: #fff !important;
   border-radius: .25rem !important;
