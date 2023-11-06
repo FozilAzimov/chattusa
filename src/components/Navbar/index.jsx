@@ -14,6 +14,7 @@ import {
   Menu,
   Section,
   SubWrapper,
+  UserImg,
   Wrapper
 } from './style';
 
@@ -22,6 +23,7 @@ import logo from '../../assets/images/logo.png';
 import { Outlet, useNavigate } from 'react-router-dom';
 import navbar from '../../utils/navbar';
 import { Dropdown, List } from 'antd';
+import { ContextHome } from '../../context/Home';
 
 export default function Navbar () {
 
@@ -36,9 +38,7 @@ export default function Navbar () {
     navigate('/home');
     localStorage.removeItem('token');
   }
-  const Help = () => {
-    navigate('/about');
-  }
+  const [state] = ContextHome();
 
   return (
     <>
@@ -65,7 +65,7 @@ export default function Navbar () {
                           return (
                             <Menu>
                               <ListWrap>
-                                <List data-name='myprofile'>Sms bor</List>
+                                <List data-name='myprofile'>no data</List>
                               </ListWrap>
                             </Menu>
                           )
@@ -80,13 +80,17 @@ export default function Navbar () {
                         dropdownRender={() => {
                           return (
                             <Menu>
-                              <ListWrap onClick={Help}>
+                              <ListWrap onClick={() => navigate('/chat')}>
+                                <UserImg src={state.link} />
+                                <List data-name='name'>{state.name}</List>
+                              </ListWrap>
+                              <ListWrap onClick={() => navigate('/about')}>
                                 <Icons.Help />
-                                <List data-name='myprofile'>Help</List>
+                                <List data-name='help'>Help</List>
                               </ListWrap>
                               <ListWrap onClick={Logout}>
                                 <Icons.Logout />
-                                <List data-name='favorites'>Log out</List>
+                                <List data-name='logout'>Log out</List>
                               </ListWrap>
                             </Menu>
                           )

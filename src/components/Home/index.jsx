@@ -66,7 +66,9 @@ import avatar27 from '../../assets/images/avatar27.png';
 import avatar28 from '../../assets/images/avatar28.png';
 import avatar29 from '../../assets/images/avatar29.png';
 import avatar30 from '../../assets/images/avatar30.png';
+
 import { useNavigate } from 'react-router-dom';
+import { ContextHome } from '../../context/Home';
 
 export default function Home () {
 
@@ -79,12 +81,13 @@ export default function Home () {
   const [avatarF, setAvatarF] = useState(avatar16);
   const [radio, setRadio] = useState(true);
   const [gender, setGender] = useState('');
+  const [, dispatch] = ContextHome();
 
   const info = () => {
     message.info('Muvaffaqqiyatli bajarildi!');
   }
   const warning = () => {
-    message.warning('Ma`lumotlarni to`liq to`ldirilganligiga ishonch hosil qilib qayta urinib ko`ring.');
+    message.warning('Ro`yxat to`g`ri to`ldirilganligini tekshiring!');
   }
 
   const Click = (e) => {
@@ -297,7 +300,8 @@ export default function Home () {
       setAvatarF('');
     }
   }
-  const getUsername = ({ target: { value } }) => setUsername(value);
+  const getUsername = ({ target: { value } }) => value.length <= 10
+    ? setUsername(value) : setUsername('');
   const getCountry = ({ target: { value } }) => setCountry(value);
   const getAge = ({ target: { value } }) => setAge(value);
 
@@ -306,6 +310,7 @@ export default function Home () {
       navigate('/chat');
       info();
       localStorage.setItem('token', 'ruxsat');
+      dispatch({ link: avatarM || avatarF, name: username });
     }
     else warning();
   };

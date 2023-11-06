@@ -129,17 +129,20 @@ const Menu = styled.div`
 display: grid;
 flex-direction: column;
 align-items: start;
-padding: 8px 10px;
-width: 130px;
+padding: 5px;
+width: 150px;
 background: #fff;
 box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
-gap: 10px;
 border-radius: 2px;
 position: absolute;
 left: -30px;
 top: 5px;
 :hover{
   background: #f3f3f3;
+}
+:active{
+  background: #158CBA;
+  color: #fff;
 }
 `;
 
@@ -162,6 +165,10 @@ cursor: pointer;
 margin-left: 15px;
 `;
 
+const UserImg = styled.img`
+width: 24px;
+`;
+
 
 export {
   Wrapper,
@@ -178,5 +185,6 @@ export {
   Icons,
   Menu,
   ListWrap,
-  List
+  List,
+  UserImg
 }
